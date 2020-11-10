@@ -85,7 +85,7 @@ inquirer.prompt(managerQuestions)
 
 function generateNewTeamMember() {
     inquirer.prompt([
-        {   type: "checkbox",
+        {   type: "list",
             message: "Which type of team member would you like to add?",
             name: "role",
             choices: [ 
@@ -94,20 +94,10 @@ function generateNewTeamMember() {
             "I don't want to add any more team members",
             ]}])
     .then (response => {
-        if (response.add === "Engineer"){
-            inquirer.prompt(engineerQuestions)
-                .then (response => {
-                    const teamMemberEngineer = new Engineer (response.name, response.id, response.email, response.github);
-                    employees.push(teamMemberEngineer);
-                    generateNewTeamMember();
-                })
-            } else if(response.add === "Intern"){
-                inquirer.prompt(internQuestions)
-                    .then (response => {
-                        const teamMemberIntern = new Intern (response.name, response.id, response.email, response.school);
-                        employees.push(teamMemberIntern);
-                        generateNewTeamMember();
-                    })
+        if (response.role === "Engineer"){
+           addEngineer();
+            } else if (response.role === "Intern"){
+                addIntern();
             }else{
                 // After the user has input all employees desired, call the `render` function (required
                 // above) and pass in an array containing all employee objects; the `render` function will
@@ -120,7 +110,23 @@ function generateNewTeamMember() {
         })
     }
 
+function addEngineer() {
+    inquirer.prompt(engineerQuestions)
+    .then (response => {
+        const teamMemberEngineer = new Engineer (response.name, response.id, response.email, response.github);
+        employees.push(teamMemberEngineer);
+        generateNewTeamMember();
+    })
+}
 
+function addIntern() {
+    inquirer.prompt(internQuestions)
+    .then (response => {
+        const teamMemberIntern = new Intern (response.name, response.id, response.email, response.school);
+        employees.push(teamMemberIntern);
+        generateNewTeamMember();
+    })  
+}
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
 // `output` folder. You can use the variable `outputPath` above target this location.

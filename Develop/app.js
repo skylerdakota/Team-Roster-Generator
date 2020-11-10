@@ -14,9 +14,88 @@ const render = require("./lib/htmlRenderer");
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-const e = new Employee();
+// const e = new Employee();
 
 // const manager = new Manager();
+
+
+// getName(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "name",
+//             message: "What is the employees full name?"
+//         }
+//     ])
+// }
+// getId(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "id",
+//             message: "What is the employees ID?"
+//         }
+//     ])
+// }
+// getRole(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "checkbox",
+//             message: "Which type of team member would you like to add?",
+//             name: "role",
+//             choices: [ 
+//             "Engineer", 
+//             "Intern", 
+//             "I don't want to add any more team members",
+//             ]}
+//     ])
+// }
+// getEmail(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "email",
+//             message: "What is the employees email address?"
+//         }
+//     ])
+// }
+// }
+
+// getSchool(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "school",
+//             message: "What is the employee's school affiliation?"
+//         }
+
+
+    // }
+    // getGithub(){
+    //     inquirer
+    //         .prompt([
+    //         {
+    //             type: "input",
+    //             name: "github",
+    //             message: "What is the employees github username?"
+    //         }
+    // }
+
+
+// getOffice(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "officeNumber",
+//             message: "What is the employee's Office number?",
+//         }
+// }
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will

@@ -2,18 +2,15 @@
 
 const Employee = require("./Employee");
 
-class Employee extends Manager {
+class Manager extends Employee {
     constructor(name, id, email, officeNumber) {
         super(name, id, email);
-        if (!officeNumber) {
-            throw new Error("You are missing the office number.");
-          }
         this.officeNumber = officeNumber;
     }
     getRole(){
         return "Manager"
     }
-    getOffice(){
+    getOfficeNumber(){
         return this.officeNumber
     }
 }

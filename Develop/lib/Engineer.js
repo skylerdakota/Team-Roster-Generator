@@ -16,16 +16,3 @@ class Employee extends Engineer {
 }
 
 module.exports = Engineer;
-
-
-
-    // }
-    // getGithub(){
-    //     inquirer
-    //         .prompt([
-    //         {
-    //             type: "input",
-    //             name: "github",
-    //             message: "What is the employees github username?"
-    //         }
-    // }

@@ -67,5 +67,37 @@
 // }
 // }
 
+// getSchool(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "school",
+//             message: "What is the employee's school affiliation?"
+//         }
+
+
+    // }
+    // getGithub(){
+    //     inquirer
+    //         .prompt([
+    //         {
+    //             type: "input",
+    //             name: "github",
+    //             message: "What is the employees github username?"
+    //         }
+    // }
+
+
+// getOffice(){
+//     inquirer
+//         .prompt([
+//         {
+//             type: "input",
+//             name: "officeNumber",
+//             message: "What is the employee's Office number?",
+//         }
+// }
+
 // module.exports = Employee;
 

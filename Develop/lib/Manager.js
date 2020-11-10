@@ -3,23 +3,16 @@
 const Employee = require("./Employee");
 
 class Employee extends Manager {
-    constructor(officeNumber) {
+    constructor(name, id, email, officeNumber) {
+        super(name, id, email);
         this.officeNumber = officeNumber;
     }
-
-    getOffice(){
-        console.log(this.officeNumber)
+    getRole(){
+        return "Manager"
     }
-
-
-getOffice(){
-    inquirer
-        .prompt([
-        {
-            type: "input",
-            name: "officeNumber",
-            message: "What is the employee's Office number?",
-        }
+    getOffice(){
+        return this.officeNumber
+    }
 }
 
 module.exports = Manager;

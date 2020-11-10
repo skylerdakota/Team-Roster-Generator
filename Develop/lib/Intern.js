@@ -3,23 +3,16 @@
 const Employee = require("./Employee");
 
 class Employee extends Intern {
-    constructor(school) {
+    constructor(name, id, email, school) {
+        super(name, id, email);
         this.school = school;
     }
-
-    getSchool(){
-        console.log(this.school)
+    getRole(){
+        return "Intern"
     }
-
-
-getSchool(){
-    inquirer
-        .prompt([
-        {
-            type: "input",
-            name: "school",
-            message: "What is the employee's school affiliation?"
-        }
+    getSchool(){
+        return this.school
+    }
 }
 
 module.exports = Intern;

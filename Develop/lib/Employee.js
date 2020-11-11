@@ -1,7 +1,6 @@
-// TODO: Write code to define and export the Employee class
-
 const inquirer = require("inquirer");
 
+// define the Employee class
 class Employee{
     constructor(name, id, email) {
       this.name = name;
@@ -22,5 +21,6 @@ class Employee{
     }
 }
 
+// export the Employee class
 module.exports = Employee;
 

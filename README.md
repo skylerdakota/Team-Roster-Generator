@@ -1,8 +1,12 @@
 # Team-Roster-Generator
 
+[Portfolio](https://skylerdakota.github.io/Team-Roster-Generator/)
+
+![Demo](Assets/roster.png)
+
 #### Project Demonstration
 
-* [Application Demonstration](https://drive.google.com/file/d/1KRGHmY1tJFuJ6Dm3dZMnmtwCVwHBvgkp/preview)
+* [Application Demonstration](https://drive.google.com/file/d/1apEu5VemyZsXn0xMmWjGmszI2r7c1d-H/preview)
 
 #### Table of Contents
 

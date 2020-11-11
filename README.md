@@ -1,6 +1,6 @@
 # Team-Roster-Generator
 
-[Portfolio](https://skylerdakota.github.io/Team-Roster-Generator/)
+[Team Roster Generator](https://skylerdakota.github.io/Team-Roster-Generator/)
 
 ![Demo](Assets/roster.png)
 
